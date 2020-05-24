@@ -1,1 +1,1 @@
-pip install -U pytest
+pip install pytest
