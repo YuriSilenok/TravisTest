@@ -1,4 +1,4 @@
-import code
+import my_code
 
 def test_minus():
-    assert -1 == code.minus(3,4)
+    assert -1 == my_code.minus(3,4)
