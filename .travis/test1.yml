@@ -1,4 +1,9 @@
 language: python
+branches:
+  only:
+  - master
+  - dev
+  - branch-a
 puthon: 3.8
 script: 
   - cd code1
