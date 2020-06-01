@@ -3,3 +3,4 @@ puthon: 3.8
 script: 
   - cd code1
   - pytest
+  - cd ..
