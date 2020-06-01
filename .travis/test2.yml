@@ -1,5 +1,6 @@
 language: python
 puthon: 3.8
 script: 
-  - cd ~/code1
+  - cd code2
   - pytest
+  - cd ..
