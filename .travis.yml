@@ -1,5 +1,5 @@
 import:
-- source: .travis/test.yml
-  if: branch = dev
+- source: .travis/test1.yml
+  if: branch = dev || branch = master || branch = branch-a
 - source: .travis/test2.yml
-  if: branch = dev
+  if: branch = dev || branch = master || branch = branch-b
