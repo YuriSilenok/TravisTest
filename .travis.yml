@@ -1,5 +1,5 @@
-version: ~> 1.0
-source: .travis/test.yml
-if: branch = dev
-source: .travis/test2.yml
-if: branch = dev
+import:
+- source: .travis/test.yml
+  if: branch = dev
+- source: .travis/test2.yml
+  if: branch = dev
