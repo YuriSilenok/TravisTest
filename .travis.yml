@@ -1,3 +1,5 @@
-language: python
-puthon: 3.8
-script: pytest
+version: ~> 1.0
+source: .travis/test.yml
+if: branch = dev
+source: .travis/test2.yml
+if: branch = dev
