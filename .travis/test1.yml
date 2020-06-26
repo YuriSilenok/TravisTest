@@ -4,3 +4,11 @@ script:
   - cd code1
   - pytest
   - cd ..
+deploy:
+  provider: releases
+  api_key: "GITHUB_TOKEN"
+  skip_cleanup: true
+  on:
+    repo: Timanchik/LB-6
+    branch: master
+    tags: true
