@@ -9,3 +9,11 @@ import:
   if: branch = dev || branch = master || branch = branch-a
 - source: .travis/test2.yml
   if: branch = dev || branch = master || branch = branch-b
+deploy:
+  provider: releases
+  api_key: "$GITHUB_TOKEN"
+  skip_cleanup: true
+  on:
+    repo: Timanchik/LB-6
+    branch: master
+    tags: true
