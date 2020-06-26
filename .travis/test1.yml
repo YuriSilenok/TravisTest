@@ -6,4 +6,4 @@ script:
   - cd ..
 deploy:
   provider: releases
-  api_key: "$GITHUB_TOKEN"
+  api_key: "$YuriSilenokToken"
