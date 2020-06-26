@@ -2,13 +2,8 @@ branches:
   only:
   - master
   - dev
-  - branch-a
-  - branch-b
 import:
 - source: .travis/test1.yml
-  if: branch = dev || branch = master || branch = branch-a
+  if: branch = master
 - source: .travis/test2.yml
-  if: branch = dev || branch = master || branch = branch-b
-deploy:
-  provider: releases
-  api_key: "$GITHUB_TOKEN"
+  if: branch = dev

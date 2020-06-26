@@ -4,3 +4,7 @@ script:
   - cd code2
   - pytest
   - cd ..
+deploy:
+  provider: releases
+  api_key: "$GITHUB_TOKEN"
+  draft: true
