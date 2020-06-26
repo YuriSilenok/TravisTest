@@ -12,8 +12,4 @@ import:
 deploy:
   provider: releases
   api_key: "$GITHUB_TOKEN"
-  skip_cleanup: true
-  on:
-    repo: Timanchik/LB-6
-    branch: master
-    tags: false
+  tags: false
