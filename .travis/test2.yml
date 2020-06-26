@@ -5,5 +5,6 @@ script:
   - pytest
   - cd ..
 deploy:
-  provider: prerelease
+  provider: releases
   api_key: "$GITHUB_TOKEN"
+  prerelease: true
