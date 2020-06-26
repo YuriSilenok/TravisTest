@@ -7,4 +7,4 @@ script:
 deploy:
   provider: releases
   api_key: "$GITHUB_TOKEN"
-  draft: true
+  prerelease: true
